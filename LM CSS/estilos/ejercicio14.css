@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: #ff0;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+nav{
+    background-color: #af0;
+    width: 25%;
+    height: 235px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+aside{
+    background-color: #0ff;
+    width: 73%;
+    height: 500px;
+    float: right;
+}
+
+article{
+    background-color: #a0f;
+    width: 25%;
+    clear: left;
+    height: 235px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #f0f;
+    padding: 15px;
+}
+
+@media(max-width: 680px)
+{
+    h1{
+        font-size: 19px;
+    }
+}

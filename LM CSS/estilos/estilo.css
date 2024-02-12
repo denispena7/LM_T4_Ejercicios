@@ -1,0 +1,12 @@
+    @font-face {
+        font-family: Game of Thrones;
+        src: url(./fonts/Game\ of\ Thrones.ttf);
+        font-weight: bold;
+        font-style: bold;
+    }
+
+    h1{
+        font-family: 'Game of Thrones';
+        font-weight: bold;
+        font-size: 60px;
+    }

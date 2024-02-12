@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"></xs:element>
+                <xs:element name="correo" type="email"></xs:element>
+                <xs:element name="twitter" type="twitter"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,3}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="twitter">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="@[a-zA-Z0-9 ]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

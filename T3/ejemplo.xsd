@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Elemento complejo-->
+    <xs:element name="escritores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="escritor" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- 
+                            xs:string 
+                            xs:decimal
+                            xs:integer
+                            xs:boolean
+                            xs:date (aaaa-mm-dd)
+                            xs:time (hh:mm:ss)
+                            -->
+                            <xs:element name="nombre" type="string50" />
+                            <xs:element name="apellidos" type="string50" minOccurs="0" />
+                            <xs:element name="dni" type="dni"></xs:element>
+                            <xs:element name="edad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0" />
+                                        <xs:maxInclusive value="100" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="nacimiento" type="xs:date" />
+                            <xs:element name="hora" type="xs:time" />
+                            <!-- Elemento Complejo vacío -->
+                            <xs:element name="baja">
+                                <xs:complexType />
+                            </xs:element>
+
+                            <!-- Elemento complejo vacío con etiqueta -->
+                            <xs:element name="ciudad">
+                                <xs:complexType>
+                                    <xs:attribute name="cp" type="xs:string" use="required"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <!-- Elemento complejo con datos y atributos -->
+                            <xs:element name="pais">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="nacionalidad" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:choice>
+                                <xs:sequence>
+                                    <xs:element name="web" type="xs:string"></xs:element>
+                                    <xs:element name="email" type="email"></xs:element>
+                                </xs:sequence>
+                                <xs:sequence>
+                                    <xs:element name="direccion" type="xs:string"></xs:element>
+                                    <xs:element name="provincia" type="xs:string"></xs:element>
+                                </xs:sequence>
+                            </xs:choice>
+
+                            <xs:element name="telefonos" minOccurs="0">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="movil" type="xs:integer"/>
+                                        <xs:element name="fijo" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="string50">
+        <xs:restriction base="xs:string">
+            <!-- 
+                "  Hola  Mundo     "
+                preserve. "  Hola  Mundo     " (18)
+                replace. " Hola Mundo " (12)
+                collapse. "Hola Mundo" (10)
+             -->
+            <xs:whiteSpace value="preserve"></xs:whiteSpace>
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="diaSemana">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lunes"></xs:enumeration>
+            <xs:enumeration value="Martes"></xs:enumeration>
+            <xs:enumeration value="Miercoles"></xs:enumeration>
+            <xs:enumeration value="Jueves"></xs:enumeration>
+            <xs:enumeration value="Viernes"></xs:enumeration>
+            <xs:enumeration value="Sabado"></xs:enumeration>
+            <xs:enumeration value="Domingo"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="calificacion">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="4"></xs:totalDigits>
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-z]{2,}"></xs:pattern>   <!--MINIMO APARIICIONES-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

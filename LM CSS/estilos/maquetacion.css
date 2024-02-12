@@ -1,0 +1,64 @@
+*{
+    margin: auto;
+}
+
+body{
+    width: 90%;
+}
+
+header{
+    background-color: aqua;
+    height: 50px;
+}
+
+nav{
+    background-color: yellowgreen;
+    height: 30px;
+    font-size: 1em;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+}
+
+aside{
+    width: 15%;
+    height: 400px;
+    background-color: aquamarine;
+    float: left;
+}
+
+article{
+    width: 85%;
+    height: 400px;
+    float: right;
+    background-color: burlywood;
+}
+
+footer{
+    clear: both;
+    height: 50px;
+    background-color: cyan;
+}
+
+h1{
+    font-size: 200%;
+    font-size: 2em;
+}
+
+h2{
+    font-size: 150%;
+    font-size: 1.5em;
+}
+
+#s1{
+    background-color: pink;
+}
+
+#s2{
+    background-color: coral;
+}

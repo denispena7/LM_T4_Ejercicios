@@ -1,0 +1,53 @@
+h1{
+    color: green;
+}
+
+h2{
+    color: blue;
+}
+
+p{
+    text-align: justify;
+}
+
+.rojo {
+    color: red;
+}
+
+.golden{
+    color: gold;
+}
+
+.under{
+    text-decoration: underline red;
+    color: red;
+}
+
+.underblue{
+    color: blue;
+    font-style: italic;
+}
+
+.purple{
+    color: violet;
+}
+
+.titulotabla{
+    color: blue ;
+}
+
+.amarillo{
+    color: rgb(223, 223, 14);
+}
+
+.brown{
+    color: brown;
+}
+
+.verde{
+    color: green;
+}
+
+.underl{
+    font-style: italic;
+}

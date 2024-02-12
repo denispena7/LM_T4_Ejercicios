@@ -1,0 +1,46 @@
+/
+  +---- persona
+  	      |
+  	      |
+  	      +--- nombre
+  	      |	   	|
+  	      |	   	+---(texto) Pepe
+  	      |
+	      +--- apellido
+	      |		  |	  
+	      |		  +---(texto) Pinillos
+	      |
+	      +--- dni 
+	      |	     |
+	      |      +---(texto) 434235
+	      |
+	      +--- fechaNacimiento
+	      |			|
+	      |			+--- dia
+	      |			|      |
+	      |			|      +---(texto) 30
+	      |			|
+	      |			+--- mes
+	      |			|      |
+	      |			|      +---(texto) 3
+	      |			|
+	      |			+--- anio
+	      |				|
+	      |				+---(texto) 1976
+	      |
+	      +--- telefono
+	      |	 	  |
+	      |		  +---(texto) 987654321
+	      |
+              +--- telefono
+	      |		  |
+	      |		  +---(texto) 65431987
+	      |
+	      +--- email
+	      |	       |
+	      |	       +---(texto) ppinillos@hotmail.com
+	      |
+	      |
+	      +--- email
+		       |
+		       +---(texto) pepito@hola.com			

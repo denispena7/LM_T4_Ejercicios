@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Kimberley';
+    src: url("../fonts/kimberley\ bl.ttf");
+    font-weight: normal;
+}
+
+
+h1{
+    color: #f00;
+    font-family: 'Kimberley', 'cursive';
+}
+
+/*
+p{
+    color: #00f;
+}
+
+h1 i{
+    color: #0f0;
+}
+
+p i{
+    color: #f00;
+}
+
+*/
+
+body{
+    background-color: #ccc;
+    background-image: url("../img/favicon\ 300x300.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+p{
+    color: #333;
+    font-size: large;
+    font-family: 'Kimberley', 'cursive';
+    font-weight: bold;
+    font-style: italic;
+
+    /*font: large "Kimberley" bold italic;*/
+    text-decoration: underline;
+    text-align: justify;
+    letter-spacing: 8px;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-indent: 20%;
+}
+
+.numero{
+    color: green;
+}

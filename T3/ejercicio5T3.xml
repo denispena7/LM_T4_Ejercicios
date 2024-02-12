@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE persona SYSTEM "./dtd/personales.dtd">
+
+<persona>
+    <nombre>Denis</nombre>
+    <apellidos>Peña Masis</apellidos>
+    <correo>penadenis007@gmail.com</correo>
+    <twitter>@elmuerto</twitter>
+</persona>

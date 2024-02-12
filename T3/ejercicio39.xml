@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/ejercicio39.xsd">
+    <nombre>Denis</nombre>
+    <apellidos>Peña Masis</apellidos>
+    <correo>penadenis007@gmail.com</correo>
+    <twitter>@elmuerto</twitter>
+</persona>

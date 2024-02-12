@@ -1,0 +1,40 @@
+div#cabeza{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    word-spacing: 10px;
+}
+
+ul.cabeza{
+    list-style: none;
+    text-align: center;
+}
+
+li.cabeza{
+    color: white;
+    background-color: red;
+    display: inline;
+}
+
+h2{
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(228,229,234) 39%,rgb(228,229,234) 39%,rgb(164,175,190) 66%); 
+    opacity: 0.7;
+}
+
+div.cuerpo{
+    border: 1px solid black;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+
+ul#cuerpo{
+    list-style-image: url(../img/purple3.png);
+}
+
+p{
+    text-align: justify;
+}

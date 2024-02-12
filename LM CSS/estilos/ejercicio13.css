@@ -1,0 +1,116 @@
+/*
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+}
+
+header{
+    text-align: justify;
+    background-color: #999797;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.izq{
+    background-color: #ccc;
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.dch{
+    background-color: #ccc;
+    width: 30%;
+    float: right;
+    text-align: justify;
+}
+
+.centro{
+    background-color: #ccc;
+    width: 40%;
+    float: left;
+    text-align: justify;
+}
+
+p{
+    padding: 5px;
+}
+
+.pie{
+    text-align: justify;
+    background-color: #999797;
+    padding-bottom: 10px;
+    clear: both;
+    margin-top: 100px;
+    text-align: justify;
+} */
+
+*{
+    margin: 0 auto;
+}
+
+.principal{
+    width: 70%;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+}
+
+header{
+    text-align: justify;
+    background-color: #999797;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.izq{
+    background-color: #ccc;
+    float: left;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 30%;
+    margin-right: 5px;
+    overflow-x: scroll;
+
+}
+
+.dch{
+    background-color: #ccc;
+    float: right;
+    text-align: justify;
+    width: 30%;
+    overflow-x: scroll;
+}
+
+.centro{
+    background-color: #ccc;
+    float: left;
+    text-align: justify;
+    width: 39%;
+    overflow-x: scroll;
+}
+
+p{
+    padding: 5px;
+}
+
+.pie{
+    text-align: justify;
+    background-color: #999797;
+    padding-bottom: 10px;
+    clear: both;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+
+@media(max-width: 1200px){
+    .centro{
+        width: 38%;
+    }
+}

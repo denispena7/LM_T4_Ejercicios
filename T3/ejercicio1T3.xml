@@ -1,0 +1,15 @@
+<?xml version = "1.0"?>
+<!DOCTYPE persona[
+<!ELEMENT persona (nombre,apellidos,correo,twitter)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT twitter (#PCDATA)>
+]>
+
+<persona>
+    <nombre>Denis</nombre>
+    <apellidos>Peña Masis</apellidos>
+    <correo>penadenis007@gmail.com</correo>
+    <twitter>@elmuerto</twitter>
+</persona>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+<!DOCTYPE escritores [
+    <!ELEMENT escritores (escritor+)>
+    <!ELEMENT escritor (nombre, apellidos?, dni, edad, nacimiento, hora, baja, ciudad, pais, ((web, email) | (direccion, provincia)), telefonos?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT nacimiento (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+    <!ELEMENT baja EMPTY>
+    <!ELEMENT ciudad EMPTY>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT telefonos (#PCDATA | movil | fijo)*>
+    <!ELEMENT movil (#PCDATA)>
+    <!ELEMENT fijo (#PCDATA)>
+
+    <!ATTLIST ciudad cp CDATA #REQUIRED>
+    <!ATTLIST pais nacionalidad CDATA #REQUIRED>
+]>-->
+
+<escritores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./ejemplo.xsd">
+    <escritor>
+        <nombre>Mario</nombre>
+        <apellidos>Vargas Llosa</apellidos>
+        <dni>00000000T</dni>
+        <edad>85</edad>
+        <nacimiento>1936-02-01</nacimiento>
+        <hora>00:00:00</hora>
+        <baja />
+        <ciudad cp="41008" />
+        <pais nacionalidad="es">España</pais>
+        <web>xxxx.com</web>
+        <email>xxxx@xxxx.com</email>
+        <telefonos>
+            Telefono Móvil: <movil>777777777</movil>
+            Telefono Fijo: <fijo>999999999</fijo>
+        </telefonos>
+    </escritor>
+
+    <escritor>
+        <nombre>Mario</nombre>
+        <apellidos>Vargas Llosa</apellidos>
+        <dni>00000000T</dni>
+        <edad>85</edad>
+        <nacimiento>1936-02-01</nacimiento>
+        <hora>00:00:00</hora>
+        <baja />
+        <ciudad cp="41008" />
+        <pais nacionalidad="es">España</pais>
+        <direccion>calle xxx</direccion>
+        <provincia>Sevilla</provincia>
+    </escritor>
+</escritores>
